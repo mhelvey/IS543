@@ -9,6 +9,19 @@
 import UIKit
 
 class TempleCollectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UITableViewDataSource, UITableViewDelegate {
+   
+    // MARK: Model
+    var selectedTempleImage = -1
+    var selectedTempleTable = -1
+    var study = false
+    var temples = [Temple]()
+    var temple1 = ""
+    var temple2 = ""
+    var match = false
+    var correct = 0
+    var incorrect = 0
+
+    
     @IBOutlet weak var templeTable: UITableView!
     @IBOutlet weak var collection: UICollectionView!
     
@@ -27,31 +40,26 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
             templeTable.hidden = true
             sender.title = "Match Mode"
             study = true
+            selectedTempleImage = -1
             collection.reloadData()
         }else {
             templeTable.hidden = false
             sender.title = "Study Mode"
             study = false
+            selectedTempleImage = -1
             collection.reloadData()
+  
         }
         
     }
     var templeCollection = TempleCollection()
     
-    var temples = [Temple]()
-    var temple1 = ""
-    var temple2 = ""
-    var match = false
     
     override func viewDidLoad() {
         for t in templeCollection.TEMPLES{
             temples.append(t)
         }
     }
-    // MARK: Model
-    var selectedTempleCell = -1
-    var selectedTempleTable = -1
-    var study = false
     
     
     // MARK: Collection view data source
@@ -73,24 +81,26 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
             templeCell.templeImage.layer.borderWidth = 4.0
             templeCell.templeImage.layer.borderColor = (UIColor( red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)).CGColor
             if study == false{
-                if indexPath.row == selectedTempleCell {
+                if indexPath.row == selectedTempleImage {
                     templeCell.templeImage.layer.borderColor = (UIColor( red: 1.0, green: 1.0, blue: 0.0, alpha: 1.0)).CGColor
                     cell.alpha = 0.5
                     temple1 = temple.name
                     NSLog("1 \(temple1)")
-                    templeMatch()
-                    if match == true{
-                        temples.removeAtIndex(selectedTempleCell)
-                        cell.alpha = 1.0
-                        templeCell.templeImage.layer.borderColor = (UIColor( red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)).CGColor
-                        selectedTempleCell = -1
-                        selectedTempleCell = indexPath.row
-                        match = false
-                        collectionView.reloadData()
-                        templeTable.reloadData()
-                        
+                    if temple2 != ""{
+                        templeMatch()
+                        if match == true{
+                            cell.alpha = 1.0
+                            templeCell.templeImage.layer.borderColor = (UIColor( red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)).CGColor
+                            temples.removeAtIndex(selectedTempleImage)
+                            selectedTempleImage = -1
+                            selectedTempleTable = -1
+                            match = false
+                            collectionView.reloadData()
+                            templeTable.reloadData()
+                        }
                     }
                 } else {
+                    
                     cell.alpha = 1.0
                 }
             }else {
@@ -104,7 +114,7 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         NSLog("Selected item \(indexPath.row)")
-        selectedTempleCell = indexPath.row
+        selectedTempleImage = indexPath.row
         
         collectionView.reloadData()
     }
@@ -133,15 +143,17 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
         if indexPath.row == selectedTempleTable {
             temple2 = temple.name
             NSLog("2 \(temple2)")
-            templeMatch()
-            if match == true{
-                temples.removeAtIndex(selectedTempleTable)
-                selectedTempleTable = -1
-                match = false
-                tableView.reloadData()
-                collection.reloadData()
+            if temple1 != "" {
+                templeMatch()
+                if match == true{
+                    temples.removeAtIndex(selectedTempleTable)
+                    selectedTempleTable = -1
+                    selectedTempleImage = -1
+                    match = false
+                    tableView.reloadData()
+                    collection.reloadData()
+                }
             }
-            
         }
         
         return tableCell
@@ -157,12 +169,21 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
     }
     
     func templeMatch() -> Bool {
+        
         if temple1 == temple2 {
             match = true
             matchLabel.title = "Correct Match"
+            temple1 = ""
+            temple2 = ""
+            correct++
+            correctLabel.title = "Correct: \(correct)"
+            
         } else {
             match = false
             matchLabel.title = "Incorrect Match"
+            incorrect++
+            incorrectLabel.title = "Incorrect: \(incorrect)"
+            
         }
         NSLog(match.description)
         return match
@@ -178,11 +199,16 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
             temples.append(t)
         }
         
-        selectedTempleCell = -1
+        selectedTempleImage = -1
         selectedTempleTable = -1
         NSLog("reset complete")
         templeTable.reloadData()
         collection.reloadData()
+        correct = 0
+        incorrect = 0
+        correctLabel.title = "Correct: 0"
+        incorrectLabel.title = "Incorrect: 0"
+        matchLabel.title = ""
         
     }
     
