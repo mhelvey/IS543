@@ -72,24 +72,28 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
             templeCell.templeImage.image = UIImage(named: temple.filename)
             templeCell.templeImage.layer.borderWidth = 4.0
             templeCell.templeImage.layer.borderColor = (UIColor( red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)).CGColor
+            if study == false{
+                if indexPath.row == selectedTempleCell {
+                    templeCell.templeImage.layer.borderColor = (UIColor( red: 1.0, green: 1.0, blue: 0.0, alpha: 1.0)).CGColor
+                    cell.alpha = 0.5
+                    temple1 = temple.name
+                    NSLog("1 \(temple1)")
+                    templeMatch()
+                    if match == true{
+                        temples.removeAtIndex(selectedTempleCell)
+                        cell.alpha = 1.0
+                        templeCell.templeImage.layer.borderColor = (UIColor( red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)).CGColor
+                        selectedTempleCell = -1
+                        selectedTempleCell = indexPath.row
+                        match = false
+                        collectionView.reloadData()
+                        templeTable.reloadData()
                         
-            if indexPath.row == selectedTempleCell {
-                templeCell.templeImage.layer.borderColor = (UIColor( red: 1.0, green: 1.0, blue: 0.0, alpha: 1.0)).CGColor
-                cell.alpha = 0.5
-                temple1 = temple.name
-                NSLog("1 \(temple1)")
-                templeMatch()
-                if match == true{
-                    temples.removeAtIndex(selectedTempleCell)
+                    }
+                } else {
                     cell.alpha = 1.0
-                    templeCell.templeImage.layer.borderColor = (UIColor( red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)).CGColor
-                    selectedTempleCell = -1
-                    match = false
-                    collectionView.reloadData()
-                    templeTable.reloadData()
-                    
                 }
-            } else {
+            }else {
                 cell.alpha = 1.0
             }
         }
@@ -182,8 +186,6 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
         
     }
     
-    func mode() {
 
-    }
 
 }
