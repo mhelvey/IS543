@@ -23,6 +23,18 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
 
     @IBAction func modeButton(sender: UIBarButtonItem) {
 //        mode()
+        if study == false {
+            templeTable.hidden = true
+            sender.title = "Match Mode"
+            study = true
+            collection.reloadData()
+        }else {
+            templeTable.hidden = false
+            sender.title = "Study Mode"
+            study = false
+            collection.reloadData()
+        }
+        
     }
     var templeCollection = TempleCollection()
     
@@ -39,6 +51,7 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
     // MARK: Model
     var selectedTempleCell = -1
     var selectedTempleTable = -1
+    var study = false
     
     
     // MARK: Collection view data source
@@ -50,6 +63,11 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
         var cell = collectionView.dequeueReusableCellWithReuseIdentifier("TempleCell", forIndexPath: indexPath) as UICollectionViewCell
         let temple = temples[indexPath.row]
         if let templeCell = cell as? TempleCollectionViewCell{
+            if study == true {
+                templeCell.templeName.hidden = false
+            }else {
+                templeCell.templeName.hidden = true
+            }
             templeCell.templeName.text = "\(temple.name)"
             templeCell.templeImage.image = UIImage(named: temple.filename)
             templeCell.templeImage.layer.borderWidth = 4.0
@@ -164,5 +182,8 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
         
     }
     
+    func mode() {
+
+    }
 
 }

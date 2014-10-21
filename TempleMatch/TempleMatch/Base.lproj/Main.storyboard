@@ -123,7 +123,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="e5t-KK-Mbh"/>
                                     <barButtonItem id="N7e-dg-ygP"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="vnM-zB-AAc"/>
-                                    <barButtonItem title="Study" id="Cyj-zv-Nm4">
+                                    <barButtonItem title="Study Mode" id="Cyj-zv-Nm4">
                                         <connections>
                                             <action selector="modeButton:" destination="vXZ-lx-hvc" id="Yww-o4-GE8"/>
                                         </connections>
