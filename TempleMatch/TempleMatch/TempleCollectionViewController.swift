@@ -12,7 +12,10 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
     
 
     @IBAction func resetButton(sender: UIBarButtonItem) {
+        NSLog("reset")
     }
+
+
     @IBAction func modeButton(sender: UIBarButtonItem) {
     }
     
@@ -130,6 +133,9 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
         NSLog(match.description)
         return match
     }
-//    carlos is da bomb.com
+
+//    func reset() {
+//        
+//    }
 
 }
