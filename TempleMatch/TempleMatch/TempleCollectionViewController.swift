@@ -15,6 +15,7 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
     var selectedTempleTable = -1
     var study = false
     var temples = [Temple]()
+    var temples2 = [Temple]()
     var temple1 = ""
     var temple2 = ""
     var match = false
@@ -58,7 +59,10 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
     override func viewDidLoad() {
         for t in templeCollection.TEMPLES{
             temples.append(t)
+            temples2.append(t)
         }
+        
+        temples = shuffle(temples)
     }
     
     
@@ -92,6 +96,7 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
                             cell.alpha = 1.0
                             templeCell.templeImage.layer.borderColor = (UIColor( red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)).CGColor
                             temples.removeAtIndex(selectedTempleImage)
+                            temples2.removeAtIndex(selectedTempleTable)
                             selectedTempleImage = -1
                             selectedTempleTable = -1
                             match = false
@@ -100,7 +105,6 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
                         }
                     }
                 } else {
-                    
                     cell.alpha = 1.0
                 }
             }else {
@@ -132,29 +136,14 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
     
     // MARK: Table view data source
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return temples.count
+        return temples2.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var tableCell: UITableViewCell
         tableCell = tableView.dequeueReusableCellWithIdentifier("templeName") as UITableViewCell
-        let temple = temples[indexPath.row]
+        let temple = temples2[indexPath.row]
         tableCell.textLabel!.text = "\(temple.name)"
-        if indexPath.row == selectedTempleTable {
-            temple2 = temple.name
-            NSLog("2 \(temple2)")
-            if temple1 != "" {
-                templeMatch()
-                if match == true{
-                    temples.removeAtIndex(selectedTempleTable)
-                    selectedTempleTable = -1
-                    selectedTempleImage = -1
-                    match = false
-                    tableView.reloadData()
-                    collection.reloadData()
-                }
-            }
-        }
         
         return tableCell
         
@@ -164,8 +153,37 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
     // MARK: Table view delegate
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedTempleTable = indexPath.row
+        var tableCell: UITableViewCell
+        tableCell = tableView.dequeueReusableCellWithIdentifier("templeName") as UITableViewCell
+        let temple = temples2[indexPath.row]
+        tableCell.textLabel!.text = "\(temple.name)"
+        if indexPath.row == selectedTempleTable {
+            temple2 = temple.name
+            NSLog("2 \(temple2)")
+            if temple1 != "" {
+                templeMatch()
+                if match == true{
+                    temples2.removeAtIndex(selectedTempleTable)
+                    temples.removeAtIndex(selectedTempleImage)
+                    selectedTempleTable = -1
+                    selectedTempleImage = -1
+                    match = false
+                    tableView.reloadData()
+                    collection.reloadData()
+                }
+            }
+        }
+
         
-        tableView.reloadData()        
+//        tableView.reloadData()        
+    }
+    
+    func shuffle<T>(var list: Array<T>) -> Array<T> {
+        for i in 0..<(list.count - 1) {
+            let j = Int(arc4random_uniform(UInt32(list.count - i))) + i
+            swap(&list[i], &list[j])
+        }
+        return list
     }
     
     func templeMatch() -> Bool {
@@ -193,11 +211,16 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
         for t in temples{
             var i = 0
             temples.removeAtIndex(i)
+            temples2.removeAtIndex(i)
             i++
         }
-        for t in templeCollection.TEMPLES{
-            temples.append(t)
-        }
+        viewDidLoad()
+//        for t in templeCollection.TEMPLES{
+//            temples.append(t)
+//        }
+//        for t in templeCollection.TEMPLES{
+//            temples.append(t)
+//        }
         
         selectedTempleImage = -1
         selectedTempleTable = -1
