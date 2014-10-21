@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D33E2876-2063-4110-AE4E-5844232A4A9A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TempleMatch</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C04A5415A4842B299D1A316AA2934EE592E0F575</key>
+		<string>https://github.com/mhelvey/IS543.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TempleMatch/TempleMatch.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C04A5415A4842B299D1A316AA2934EE592E0F575</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mhelvey/IS543.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C04A5415A4842B299D1A316AA2934EE592E0F575</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C04A5415A4842B299D1A316AA2934EE592E0F575</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS%20Dev</string>
+		</dict>
+	</array>
+</dict>
+</plist>

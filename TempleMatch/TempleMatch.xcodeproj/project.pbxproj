@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2602000719F4A6D6009EC6DA /* Temple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2602000619F4A6D6009EC6DA /* Temple.swift */; };
+		2607271219F34F3900732EAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607271119F34F3900732EAF /* AppDelegate.swift */; };
+		2607271719F34F3900732EAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2607271519F34F3900732EAF /* Main.storyboard */; };
+		2607271919F34F3900732EAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2607271819F34F3900732EAF /* Images.xcassets */; };
+		2607271C19F34F3900732EAF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2607271A19F34F3900732EAF /* LaunchScreen.xib */; };
+		2607272819F34F3900732EAF /* TempleMatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607272719F34F3900732EAF /* TempleMatchTests.swift */; };
+		2607276019F34FD700732EAF /* aba-nigeria-temple-lds-273999-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273519F34FD700732EAF /* aba-nigeria-temple-lds-273999-mobile.jpg */; };
+		2607276119F34FD700732EAF /* aba-nigeria-temple-lds-273999-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273519F34FD700732EAF /* aba-nigeria-temple-lds-273999-mobile.jpg */; };
+		2607276219F34FD700732EAF /* accra-ghana-temple-lds-249027-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273619F34FD700732EAF /* accra-ghana-temple-lds-249027-mobile.jpg */; };
+		2607276319F34FD700732EAF /* accra-ghana-temple-lds-249027-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273619F34FD700732EAF /* accra-ghana-temple-lds-249027-mobile.jpg */; };
+		2607276419F34FD700732EAF /* albuquerque-temple-lds-137885-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273719F34FD700732EAF /* albuquerque-temple-lds-137885-mobile.jpg */; };
+		2607276519F34FD700732EAF /* albuquerque-temple-lds-137885-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273719F34FD700732EAF /* albuquerque-temple-lds-137885-mobile.jpg */; };
+		2607276619F34FD700732EAF /* anchorage-temple-lds-253274-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273819F34FD700732EAF /* anchorage-temple-lds-253274-mobile.jpg */; };
+		2607276719F34FD700732EAF /* anchorage-temple-lds-253274-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273819F34FD700732EAF /* anchorage-temple-lds-253274-mobile.jpg */; };
+		2607276819F34FD700732EAF /* apia-samoa-temple-lds-460475-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273919F34FD700732EAF /* apia-samoa-temple-lds-460475-mobile.jpg */; };
+		2607276919F34FD700732EAF /* apia-samoa-temple-lds-460475-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273919F34FD700732EAF /* apia-samoa-temple-lds-460475-mobile.jpg */; };
+		2607276A19F34FD700732EAF /* asuncion-paraguay-temple-lds-298372-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273A19F34FD700732EAF /* asuncion-paraguay-temple-lds-298372-mobile.jpg */; };
+		2607276B19F34FD700732EAF /* asuncion-paraguay-temple-lds-298372-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273A19F34FD700732EAF /* asuncion-paraguay-temple-lds-298372-mobile.jpg */; };
+		2607276C19F34FD700732EAF /* atlanta-georgia-temple-sunset-1218213-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273B19F34FD700732EAF /* atlanta-georgia-temple-sunset-1218213-mobile.jpg */; };
+		2607276D19F34FD700732EAF /* atlanta-georgia-temple-sunset-1218213-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273B19F34FD700732EAF /* atlanta-georgia-temple-sunset-1218213-mobile.jpg */; };
+		2607276E19F34FD700732EAF /* baton-rouge-temple-lds-1078084-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273C19F34FD700732EAF /* baton-rouge-temple-lds-1078084-mobile.jpg */; };
+		2607276F19F34FD700732EAF /* baton-rouge-temple-lds-1078084-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273C19F34FD700732EAF /* baton-rouge-temple-lds-1078084-mobile.jpg */; };
+		2607277019F34FD700732EAF /* bern-switzerland-temple-lds-653038-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273D19F34FD700732EAF /* bern-switzerland-temple-lds-653038-mobile.jpg */; };
+		2607277119F34FD700732EAF /* bern-switzerland-temple-lds-653038-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273D19F34FD700732EAF /* bern-switzerland-temple-lds-653038-mobile.jpg */; };
+		2607277219F34FD700732EAF /* billings-temple-lds-946466-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273E19F34FD700732EAF /* billings-temple-lds-946466-mobile.jpg */; };
+		2607277319F34FD700732EAF /* billings-temple-lds-946466-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273E19F34FD700732EAF /* billings-temple-lds-946466-mobile.jpg */; };
+		2607277419F34FD700732EAF /* birmingham-temple-lds-130170-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273F19F34FD700732EAF /* birmingham-temple-lds-130170-mobile.jpg */; };
+		2607277519F34FD700732EAF /* birmingham-temple-lds-130170-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607273F19F34FD700732EAF /* birmingham-temple-lds-130170-mobile.jpg */; };
+		2607277619F34FD700732EAF /* bismarck-temple-lds-408056-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274019F34FD700732EAF /* bismarck-temple-lds-408056-mobile.jpg */; };
+		2607277719F34FD700732EAF /* bismarck-temple-lds-408056-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274019F34FD700732EAF /* bismarck-temple-lds-408056-mobile.jpg */; };
+		2607277819F34FD700732EAF /* bogota-colombia-mormon-temple-856490-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274119F34FD700732EAF /* bogota-colombia-mormon-temple-856490-mobile.jpg */; };
+		2607277919F34FD700732EAF /* bogota-colombia-mormon-temple-856490-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274119F34FD700732EAF /* bogota-colombia-mormon-temple-856490-mobile.jpg */; };
+		2607277A19F34FD700732EAF /* boise-temple-lds-39439-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274219F34FD700732EAF /* boise-temple-lds-39439-mobile.jpg */; };
+		2607277B19F34FD700732EAF /* boise-temple-lds-39439-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274219F34FD700732EAF /* boise-temple-lds-39439-mobile.jpg */; };
+		2607277C19F34FD700732EAF /* boston-temple-lds-945541-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274319F34FD700732EAF /* boston-temple-lds-945541-mobile.jpg */; };
+		2607277D19F34FD700732EAF /* boston-temple-lds-945541-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274319F34FD700732EAF /* boston-temple-lds-945541-mobile.jpg */; };
+		2607277E19F34FD700732EAF /* bountiful-temple-766491-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274419F34FD700732EAF /* bountiful-temple-766491-mobile.jpg */; };
+		2607277F19F34FD700732EAF /* bountiful-temple-766491-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274419F34FD700732EAF /* bountiful-temple-766491-mobile.jpg */; };
+		2607278019F34FD700732EAF /* brigham-city-utah-temple-dedication-day-1027033-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274519F34FD700732EAF /* brigham-city-utah-temple-dedication-day-1027033-mobile.jpg */; };
+		2607278119F34FD700732EAF /* brigham-city-utah-temple-dedication-day-1027033-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274519F34FD700732EAF /* brigham-city-utah-temple-dedication-day-1027033-mobile.jpg */; };
+		2607278219F34FD700732EAF /* brisbane-australia-temple-lds-745088-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274619F34FD700732EAF /* brisbane-australia-temple-lds-745088-mobile.jpg */; };
+		2607278319F34FD700732EAF /* brisbane-australia-temple-lds-745088-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274619F34FD700732EAF /* brisbane-australia-temple-lds-745088-mobile.jpg */; };
+		2607278419F34FD700732EAF /* buenos-aires-argentina-temple-lds-82744-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274719F34FD700732EAF /* buenos-aires-argentina-temple-lds-82744-mobile.jpg */; };
+		2607278519F34FD700732EAF /* buenos-aires-argentina-temple-lds-82744-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274719F34FD700732EAF /* buenos-aires-argentina-temple-lds-82744-mobile.jpg */; };
+		2607278619F34FD700732EAF /* calgary-alberta-temple-before-open-house-1033408-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274819F34FD700732EAF /* calgary-alberta-temple-before-open-house-1033408-mobile.jpg */; };
+		2607278719F34FD700732EAF /* calgary-alberta-temple-before-open-house-1033408-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274819F34FD700732EAF /* calgary-alberta-temple-before-open-house-1033408-mobile.jpg */; };
+		2607278819F34FD700732EAF /* campinas-brazil-temple-lighted-1029894-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274919F34FD700732EAF /* campinas-brazil-temple-lighted-1029894-mobile.jpg */; };
+		2607278919F34FD700732EAF /* campinas-brazil-temple-lighted-1029894-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274919F34FD700732EAF /* campinas-brazil-temple-lighted-1029894-mobile.jpg */; };
+		2607278A19F34FD700732EAF /* cardston-alberta-temple-lds-782043-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274A19F34FD700732EAF /* cardston-alberta-temple-lds-782043-mobile.jpg */; };
+		2607278B19F34FD700732EAF /* cardston-alberta-temple-lds-782043-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274A19F34FD700732EAF /* cardston-alberta-temple-lds-782043-mobile.jpg */; };
+		2607278C19F34FD700732EAF /* cebu-philippines-temple-lds-852837-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274B19F34FD700732EAF /* cebu-philippines-temple-lds-852837-mobile.jpg */; };
+		2607278D19F34FD700732EAF /* cebu-philippines-temple-lds-852837-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274B19F34FD700732EAF /* cebu-philippines-temple-lds-852837-mobile.jpg */; };
+		2607278E19F34FD700732EAF /* chicago-temple-lds-885844-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274C19F34FD700732EAF /* chicago-temple-lds-885844-mobile.jpg */; };
+		2607278F19F34FD700732EAF /* chicago-temple-lds-885844-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274C19F34FD700732EAF /* chicago-temple-lds-885844-mobile.jpg */; };
+		2607279019F34FD700732EAF /* ciudad-juarez-mexico-temple-lds-126122-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274D19F34FD700732EAF /* ciudad-juarez-mexico-temple-lds-126122-mobile.jpg */; };
+		2607279119F34FD700732EAF /* ciudad-juarez-mexico-temple-lds-126122-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274D19F34FD700732EAF /* ciudad-juarez-mexico-temple-lds-126122-mobile.jpg */; };
+		2607279219F34FD700732EAF /* colonia-juarez-mexico-temple-lds-1039762-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274E19F34FD700732EAF /* colonia-juarez-mexico-temple-lds-1039762-mobile.jpg */; };
+		2607279319F34FD700732EAF /* colonia-juarez-mexico-temple-lds-1039762-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274E19F34FD700732EAF /* colonia-juarez-mexico-temple-lds-1039762-mobile.jpg */; };
+		2607279419F34FD700732EAF /* columbia-river-temple-lds-761262-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274F19F34FD700732EAF /* columbia-river-temple-lds-761262-mobile.jpg */; };
+		2607279519F34FD700732EAF /* columbia-river-temple-lds-761262-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607274F19F34FD700732EAF /* columbia-river-temple-lds-761262-mobile.jpg */; };
+		2607279619F34FD700732EAF /* columbia-temple-lds-83400-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275019F34FD700732EAF /* columbia-temple-lds-83400-mobile.jpg */; };
+		2607279719F34FD700732EAF /* columbia-temple-lds-83400-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275019F34FD700732EAF /* columbia-temple-lds-83400-mobile.jpg */; };
+		2607279819F34FD700732EAF /* columbus-temple-lds-406110-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275119F34FD700732EAF /* columbus-temple-lds-406110-mobile.jpg */; };
+		2607279919F34FD700732EAF /* columbus-temple-lds-406110-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275119F34FD700732EAF /* columbus-temple-lds-406110-mobile.jpg */; };
+		2607279A19F34FD700732EAF /* copenhagen-denmark-temple-895949-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275219F34FD700732EAF /* copenhagen-denmark-temple-895949-mobile.jpg */; };
+		2607279B19F34FD700732EAF /* copenhagen-denmark-temple-895949-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275219F34FD700732EAF /* copenhagen-denmark-temple-895949-mobile.jpg */; };
+		2607279C19F34FD700732EAF /* cordoba-argentina-temple-rendering-780527-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275319F34FD700732EAF /* cordoba-argentina-temple-rendering-780527-mobile.jpg */; };
+		2607279D19F34FD700732EAF /* cordoba-argentina-temple-rendering-780527-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275319F34FD700732EAF /* cordoba-argentina-temple-rendering-780527-mobile.jpg */; };
+		2607279E19F34FD700732EAF /* curitiba-brazil-temple-lds-851199-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275419F34FD700732EAF /* curitiba-brazil-temple-lds-851199-mobile.jpg */; };
+		2607279F19F34FD700732EAF /* curitiba-brazil-temple-lds-851199-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275419F34FD700732EAF /* curitiba-brazil-temple-lds-851199-mobile.jpg */; };
+		260727A019F34FD700732EAF /* dallas-temple-lds-850748-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275519F34FD700732EAF /* dallas-temple-lds-850748-mobile.jpg */; };
+		260727A119F34FD700732EAF /* dallas-temple-lds-850748-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275519F34FD700732EAF /* dallas-temple-lds-850748-mobile.jpg */; };
+		260727A219F34FD700732EAF /* denver-temple-lds-999518-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275619F34FD700732EAF /* denver-temple-lds-999518-mobile.jpg */; };
+		260727A319F34FD700732EAF /* denver-temple-lds-999518-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275619F34FD700732EAF /* denver-temple-lds-999518-mobile.jpg */; };
+		260727A419F34FD700732EAF /* detroit-temple-lds-837623-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275719F34FD700732EAF /* detroit-temple-lds-837623-mobile.jpg */; };
+		260727A519F34FD700732EAF /* detroit-temple-lds-837623-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275719F34FD700732EAF /* detroit-temple-lds-837623-mobile.jpg */; };
+		260727A619F34FD700732EAF /* draper-utah-lds-temple-1079449-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275819F34FD700732EAF /* draper-utah-lds-temple-1079449-mobile.jpg */; };
+		260727A719F34FD700732EAF /* draper-utah-lds-temple-1079449-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275819F34FD700732EAF /* draper-utah-lds-temple-1079449-mobile.jpg */; };
+		260727A819F34FD700732EAF /* guatemala-lds-temple-82739-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275919F34FD700732EAF /* guatemala-lds-temple-82739-mobile.jpg */; };
+		260727A919F34FD700732EAF /* guatemala-lds-temple-82739-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275919F34FD700732EAF /* guatemala-lds-temple-82739-mobile.jpg */; };
+		260727AA19F34FD700732EAF /* hawaii-temple-761091-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275A19F34FD700732EAF /* hawaii-temple-761091-mobile.jpg */; };
+		260727AB19F34FD700732EAF /* hawaii-temple-761091-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275A19F34FD700732EAF /* hawaii-temple-761091-mobile.jpg */; };
+		260727AC19F34FD700732EAF /* helsinki-finland-temple-lds-354503-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275B19F34FD700732EAF /* helsinki-finland-temple-lds-354503-mobile.jpg */; };
+		260727AD19F34FD700732EAF /* helsinki-finland-temple-lds-354503-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275B19F34FD700732EAF /* helsinki-finland-temple-lds-354503-mobile.jpg */; };
+		260727AE19F34FD700732EAF /* kyiv-ukraine-temple-lds-774302-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275C19F34FD700732EAF /* kyiv-ukraine-temple-lds-774302-mobile.jpg */; };
+		260727AF19F34FD700732EAF /* kyiv-ukraine-temple-lds-774302-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275C19F34FD700732EAF /* kyiv-ukraine-temple-lds-774302-mobile.jpg */; };
+		260727B019F34FD700732EAF /* madrid-spain-temple-954939-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275D19F34FD700732EAF /* madrid-spain-temple-954939-mobile.jpg */; };
+		260727B119F34FD700732EAF /* madrid-spain-temple-954939-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275D19F34FD700732EAF /* madrid-spain-temple-954939-mobile.jpg */; };
+		260727B219F34FD700732EAF /* mexico-city-temple-lds-591669-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275E19F34FD700732EAF /* mexico-city-temple-lds-591669-mobile.jpg */; };
+		260727B319F34FD700732EAF /* mexico-city-temple-lds-591669-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275E19F34FD700732EAF /* mexico-city-temple-lds-591669-mobile.jpg */; };
+		267BAEBA19F49A4900AAFAFF /* TempleCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267BAEB919F49A4900AAFAFF /* TempleCollection.swift */; };
+		26A2B45719F3EF09008E870E /* TempleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A2B45619F3EF09008E870E /* TempleCollectionViewController.swift */; };
+		26A2B45919F3F269008E870E /* TempleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A2B45819F3F269008E870E /* TempleCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2607272219F34F3900732EAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2607270419F34F3900732EAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2607270B19F34F3900732EAF;
+			remoteInfo = TempleMatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2602000619F4A6D6009EC6DA /* Temple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temple.swift; sourceTree = "<group>"; };
+		2607270C19F34F3900732EAF /* TempleMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempleMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2607271019F34F3900732EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2607271119F34F3900732EAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2607271619F34F3900732EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2607271819F34F3900732EAF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2607271B19F34F3900732EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2607272119F34F3900732EAF /* TempleMatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempleMatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2607272619F34F3900732EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2607272719F34F3900732EAF /* TempleMatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempleMatchTests.swift; sourceTree = "<group>"; };
+		2607273519F34FD700732EAF /* aba-nigeria-temple-lds-273999-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "aba-nigeria-temple-lds-273999-mobile.jpg"; sourceTree = "<group>"; };
+		2607273619F34FD700732EAF /* accra-ghana-temple-lds-249027-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "accra-ghana-temple-lds-249027-mobile.jpg"; sourceTree = "<group>"; };
+		2607273719F34FD700732EAF /* albuquerque-temple-lds-137885-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "albuquerque-temple-lds-137885-mobile.jpg"; sourceTree = "<group>"; };
+		2607273819F34FD700732EAF /* anchorage-temple-lds-253274-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "anchorage-temple-lds-253274-mobile.jpg"; sourceTree = "<group>"; };
+		2607273919F34FD700732EAF /* apia-samoa-temple-lds-460475-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "apia-samoa-temple-lds-460475-mobile.jpg"; sourceTree = "<group>"; };
+		2607273A19F34FD700732EAF /* asuncion-paraguay-temple-lds-298372-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "asuncion-paraguay-temple-lds-298372-mobile.jpg"; sourceTree = "<group>"; };
+		2607273B19F34FD700732EAF /* atlanta-georgia-temple-sunset-1218213-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "atlanta-georgia-temple-sunset-1218213-mobile.jpg"; sourceTree = "<group>"; };
+		2607273C19F34FD700732EAF /* baton-rouge-temple-lds-1078084-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "baton-rouge-temple-lds-1078084-mobile.jpg"; sourceTree = "<group>"; };
+		2607273D19F34FD700732EAF /* bern-switzerland-temple-lds-653038-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bern-switzerland-temple-lds-653038-mobile.jpg"; sourceTree = "<group>"; };
+		2607273E19F34FD700732EAF /* billings-temple-lds-946466-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "billings-temple-lds-946466-mobile.jpg"; sourceTree = "<group>"; };
+		2607273F19F34FD700732EAF /* birmingham-temple-lds-130170-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "birmingham-temple-lds-130170-mobile.jpg"; sourceTree = "<group>"; };
+		2607274019F34FD700732EAF /* bismarck-temple-lds-408056-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bismarck-temple-lds-408056-mobile.jpg"; sourceTree = "<group>"; };
+		2607274119F34FD700732EAF /* bogota-colombia-mormon-temple-856490-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bogota-colombia-mormon-temple-856490-mobile.jpg"; sourceTree = "<group>"; };
+		2607274219F34FD700732EAF /* boise-temple-lds-39439-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "boise-temple-lds-39439-mobile.jpg"; sourceTree = "<group>"; };
+		2607274319F34FD700732EAF /* boston-temple-lds-945541-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "boston-temple-lds-945541-mobile.jpg"; sourceTree = "<group>"; };
+		2607274419F34FD700732EAF /* bountiful-temple-766491-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bountiful-temple-766491-mobile.jpg"; sourceTree = "<group>"; };
+		2607274519F34FD700732EAF /* brigham-city-utah-temple-dedication-day-1027033-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "brigham-city-utah-temple-dedication-day-1027033-mobile.jpg"; sourceTree = "<group>"; };
+		2607274619F34FD700732EAF /* brisbane-australia-temple-lds-745088-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "brisbane-australia-temple-lds-745088-mobile.jpg"; sourceTree = "<group>"; };
+		2607274719F34FD700732EAF /* buenos-aires-argentina-temple-lds-82744-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "buenos-aires-argentina-temple-lds-82744-mobile.jpg"; sourceTree = "<group>"; };
+		2607274819F34FD700732EAF /* calgary-alberta-temple-before-open-house-1033408-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "calgary-alberta-temple-before-open-house-1033408-mobile.jpg"; sourceTree = "<group>"; };
+		2607274919F34FD700732EAF /* campinas-brazil-temple-lighted-1029894-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "campinas-brazil-temple-lighted-1029894-mobile.jpg"; sourceTree = "<group>"; };
+		2607274A19F34FD700732EAF /* cardston-alberta-temple-lds-782043-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cardston-alberta-temple-lds-782043-mobile.jpg"; sourceTree = "<group>"; };
+		2607274B19F34FD700732EAF /* cebu-philippines-temple-lds-852837-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cebu-philippines-temple-lds-852837-mobile.jpg"; sourceTree = "<group>"; };
+		2607274C19F34FD700732EAF /* chicago-temple-lds-885844-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "chicago-temple-lds-885844-mobile.jpg"; sourceTree = "<group>"; };
+		2607274D19F34FD700732EAF /* ciudad-juarez-mexico-temple-lds-126122-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ciudad-juarez-mexico-temple-lds-126122-mobile.jpg"; sourceTree = "<group>"; };
+		2607274E19F34FD700732EAF /* colonia-juarez-mexico-temple-lds-1039762-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "colonia-juarez-mexico-temple-lds-1039762-mobile.jpg"; sourceTree = "<group>"; };
+		2607274F19F34FD700732EAF /* columbia-river-temple-lds-761262-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "columbia-river-temple-lds-761262-mobile.jpg"; sourceTree = "<group>"; };
+		2607275019F34FD700732EAF /* columbia-temple-lds-83400-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "columbia-temple-lds-83400-mobile.jpg"; sourceTree = "<group>"; };
+		2607275119F34FD700732EAF /* columbus-temple-lds-406110-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "columbus-temple-lds-406110-mobile.jpg"; sourceTree = "<group>"; };
+		2607275219F34FD700732EAF /* copenhagen-denmark-temple-895949-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "copenhagen-denmark-temple-895949-mobile.jpg"; sourceTree = "<group>"; };
+		2607275319F34FD700732EAF /* cordoba-argentina-temple-rendering-780527-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cordoba-argentina-temple-rendering-780527-mobile.jpg"; sourceTree = "<group>"; };
+		2607275419F34FD700732EAF /* curitiba-brazil-temple-lds-851199-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "curitiba-brazil-temple-lds-851199-mobile.jpg"; sourceTree = "<group>"; };
+		2607275519F34FD700732EAF /* dallas-temple-lds-850748-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dallas-temple-lds-850748-mobile.jpg"; sourceTree = "<group>"; };
+		2607275619F34FD700732EAF /* denver-temple-lds-999518-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "denver-temple-lds-999518-mobile.jpg"; sourceTree = "<group>"; };
+		2607275719F34FD700732EAF /* detroit-temple-lds-837623-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "detroit-temple-lds-837623-mobile.jpg"; sourceTree = "<group>"; };
+		2607275819F34FD700732EAF /* draper-utah-lds-temple-1079449-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "draper-utah-lds-temple-1079449-mobile.jpg"; sourceTree = "<group>"; };
+		2607275919F34FD700732EAF /* guatemala-lds-temple-82739-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "guatemala-lds-temple-82739-mobile.jpg"; sourceTree = "<group>"; };
+		2607275A19F34FD700732EAF /* hawaii-temple-761091-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-temple-761091-mobile.jpg"; sourceTree = "<group>"; };
+		2607275B19F34FD700732EAF /* helsinki-finland-temple-lds-354503-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "helsinki-finland-temple-lds-354503-mobile.jpg"; sourceTree = "<group>"; };
+		2607275C19F34FD700732EAF /* kyiv-ukraine-temple-lds-774302-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kyiv-ukraine-temple-lds-774302-mobile.jpg"; sourceTree = "<group>"; };
+		2607275D19F34FD700732EAF /* madrid-spain-temple-954939-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "madrid-spain-temple-954939-mobile.jpg"; sourceTree = "<group>"; };
+		2607275E19F34FD700732EAF /* mexico-city-temple-lds-591669-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mexico-city-temple-lds-591669-mobile.jpg"; sourceTree = "<group>"; };
+		267BAEB919F49A4900AAFAFF /* TempleCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempleCollection.swift; sourceTree = "<group>"; };
+		26A2B45619F3EF09008E870E /* TempleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempleCollectionViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		26A2B45819F3F269008E870E /* TempleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempleCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2607270919F34F3900732EAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2607271E19F34F3900732EAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2607270319F34F3900732EAF = {
+			isa = PBXGroup;
+			children = (
+				2607270E19F34F3900732EAF /* TempleMatch */,
+				2607272419F34F3900732EAF /* TempleMatchTests */,
+				2607270D19F34F3900732EAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2607270D19F34F3900732EAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2607270C19F34F3900732EAF /* TempleMatch.app */,
+				2607272119F34F3900732EAF /* TempleMatchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2607270E19F34F3900732EAF /* TempleMatch */ = {
+			isa = PBXGroup;
+			children = (
+				2607273119F34F6D00732EAF /* Model */,
+				2607273219F34F7400732EAF /* View */,
+				2607273319F34F7C00732EAF /* Controller */,
+				2607273419F34FD700732EAF /* Temple Photos */,
+				2607271819F34F3900732EAF /* Images.xcassets */,
+				2607270F19F34F3900732EAF /* Supporting Files */,
+			);
+			path = TempleMatch;
+			sourceTree = "<group>";
+		};
+		2607270F19F34F3900732EAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2607271119F34F3900732EAF /* AppDelegate.swift */,
+				2607271019F34F3900732EAF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2607272419F34F3900732EAF /* TempleMatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				2607272719F34F3900732EAF /* TempleMatchTests.swift */,
+				2607272519F34F3900732EAF /* Supporting Files */,
+			);
+			path = TempleMatchTests;
+			sourceTree = "<group>";
+		};
+		2607272519F34F3900732EAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2607272619F34F3900732EAF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2607273119F34F6D00732EAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				267BAEB919F49A4900AAFAFF /* TempleCollection.swift */,
+				2602000619F4A6D6009EC6DA /* Temple.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2607273219F34F7400732EAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2607271A19F34F3900732EAF /* LaunchScreen.xib */,
+				2607271519F34F3900732EAF /* Main.storyboard */,
+				26A2B45819F3F269008E870E /* TempleCollectionViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2607273319F34F7C00732EAF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				26A2B45619F3EF09008E870E /* TempleCollectionViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2607273419F34FD700732EAF /* Temple Photos */ = {
+			isa = PBXGroup;
+			children = (
+				2607273519F34FD700732EAF /* aba-nigeria-temple-lds-273999-mobile.jpg */,
+				2607273619F34FD700732EAF /* accra-ghana-temple-lds-249027-mobile.jpg */,
+				2607273719F34FD700732EAF /* albuquerque-temple-lds-137885-mobile.jpg */,
+				2607273819F34FD700732EAF /* anchorage-temple-lds-253274-mobile.jpg */,
+				2607273919F34FD700732EAF /* apia-samoa-temple-lds-460475-mobile.jpg */,
+				2607273A19F34FD700732EAF /* asuncion-paraguay-temple-lds-298372-mobile.jpg */,
+				2607273B19F34FD700732EAF /* atlanta-georgia-temple-sunset-1218213-mobile.jpg */,
+				2607273C19F34FD700732EAF /* baton-rouge-temple-lds-1078084-mobile.jpg */,
+				2607273D19F34FD700732EAF /* bern-switzerland-temple-lds-653038-mobile.jpg */,
+				2607273E19F34FD700732EAF /* billings-temple-lds-946466-mobile.jpg */,
+				2607273F19F34FD700732EAF /* birmingham-temple-lds-130170-mobile.jpg */,
+				2607274019F34FD700732EAF /* bismarck-temple-lds-408056-mobile.jpg */,
+				2607274119F34FD700732EAF /* bogota-colombia-mormon-temple-856490-mobile.jpg */,
+				2607274219F34FD700732EAF /* boise-temple-lds-39439-mobile.jpg */,
+				2607274319F34FD700732EAF /* boston-temple-lds-945541-mobile.jpg */,
+				2607274419F34FD700732EAF /* bountiful-temple-766491-mobile.jpg */,
+				2607274519F34FD700732EAF /* brigham-city-utah-temple-dedication-day-1027033-mobile.jpg */,
+				2607274619F34FD700732EAF /* brisbane-australia-temple-lds-745088-mobile.jpg */,
+				2607274719F34FD700732EAF /* buenos-aires-argentina-temple-lds-82744-mobile.jpg */,
+				2607274819F34FD700732EAF /* calgary-alberta-temple-before-open-house-1033408-mobile.jpg */,
+				2607274919F34FD700732EAF /* campinas-brazil-temple-lighted-1029894-mobile.jpg */,
+				2607274A19F34FD700732EAF /* cardston-alberta-temple-lds-782043-mobile.jpg */,
+				2607274B19F34FD700732EAF /* cebu-philippines-temple-lds-852837-mobile.jpg */,
+				2607274C19F34FD700732EAF /* chicago-temple-lds-885844-mobile.jpg */,
+				2607274D19F34FD700732EAF /* ciudad-juarez-mexico-temple-lds-126122-mobile.jpg */,
+				2607274E19F34FD700732EAF /* colonia-juarez-mexico-temple-lds-1039762-mobile.jpg */,
+				2607274F19F34FD700732EAF /* columbia-river-temple-lds-761262-mobile.jpg */,
+				2607275019F34FD700732EAF /* columbia-temple-lds-83400-mobile.jpg */,
+				2607275119F34FD700732EAF /* columbus-temple-lds-406110-mobile.jpg */,
+				2607275219F34FD700732EAF /* copenhagen-denmark-temple-895949-mobile.jpg */,
+				2607275319F34FD700732EAF /* cordoba-argentina-temple-rendering-780527-mobile.jpg */,
+				2607275419F34FD700732EAF /* curitiba-brazil-temple-lds-851199-mobile.jpg */,
+				2607275519F34FD700732EAF /* dallas-temple-lds-850748-mobile.jpg */,
+				2607275619F34FD700732EAF /* denver-temple-lds-999518-mobile.jpg */,
+				2607275719F34FD700732EAF /* detroit-temple-lds-837623-mobile.jpg */,
+				2607275819F34FD700732EAF /* draper-utah-lds-temple-1079449-mobile.jpg */,
+				2607275919F34FD700732EAF /* guatemala-lds-temple-82739-mobile.jpg */,
+				2607275A19F34FD700732EAF /* hawaii-temple-761091-mobile.jpg */,
+				2607275B19F34FD700732EAF /* helsinki-finland-temple-lds-354503-mobile.jpg */,
+				2607275C19F34FD700732EAF /* kyiv-ukraine-temple-lds-774302-mobile.jpg */,
+				2607275D19F34FD700732EAF /* madrid-spain-temple-954939-mobile.jpg */,
+				2607275E19F34FD700732EAF /* mexico-city-temple-lds-591669-mobile.jpg */,
+			);
+			path = "Temple Photos";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2607270B19F34F3900732EAF /* TempleMatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2607272B19F34F3900732EAF /* Build configuration list for PBXNativeTarget "TempleMatch" */;
+			buildPhases = (
+				2607270819F34F3900732EAF /* Sources */,
+				2607270919F34F3900732EAF /* Frameworks */,
+				2607270A19F34F3900732EAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TempleMatch;
+			productName = TempleMatch;
+			productReference = 2607270C19F34F3900732EAF /* TempleMatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2607272019F34F3900732EAF /* TempleMatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2607272E19F34F3900732EAF /* Build configuration list for PBXNativeTarget "TempleMatchTests" */;
+			buildPhases = (
+				2607271D19F34F3900732EAF /* Sources */,
+				2607271E19F34F3900732EAF /* Frameworks */,
+				2607271F19F34F3900732EAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2607272319F34F3900732EAF /* PBXTargetDependency */,
+			);
+			name = TempleMatchTests;
+			productName = TempleMatchTests;
+			productReference = 2607272119F34F3900732EAF /* TempleMatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2607270419F34F3900732EAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Michael Helvey";
+				TargetAttributes = {
+					2607270B19F34F3900732EAF = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					2607272019F34F3900732EAF = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 2607270B19F34F3900732EAF;
+					};
+				};
+			};
+			buildConfigurationList = 2607270719F34F3900732EAF /* Build configuration list for PBXProject "TempleMatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2607270319F34F3900732EAF;
+			productRefGroup = 2607270D19F34F3900732EAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2607270B19F34F3900732EAF /* TempleMatch */,
+				2607272019F34F3900732EAF /* TempleMatchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2607270A19F34F3900732EAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260727A819F34FD700732EAF /* guatemala-lds-temple-82739-mobile.jpg in Resources */,
+				2607279819F34FD700732EAF /* columbus-temple-lds-406110-mobile.jpg in Resources */,
+				2607279619F34FD700732EAF /* columbia-temple-lds-83400-mobile.jpg in Resources */,
+				2607276019F34FD700732EAF /* aba-nigeria-temple-lds-273999-mobile.jpg in Resources */,
+				2607276419F34FD700732EAF /* albuquerque-temple-lds-137885-mobile.jpg in Resources */,
+				2607278019F34FD700732EAF /* brigham-city-utah-temple-dedication-day-1027033-mobile.jpg in Resources */,
+				2607276619F34FD700732EAF /* anchorage-temple-lds-253274-mobile.jpg in Resources */,
+				260727AE19F34FD700732EAF /* kyiv-ukraine-temple-lds-774302-mobile.jpg in Resources */,
+				2607278C19F34FD700732EAF /* cebu-philippines-temple-lds-852837-mobile.jpg in Resources */,
+				2607277C19F34FD700732EAF /* boston-temple-lds-945541-mobile.jpg in Resources */,
+				2607277E19F34FD700732EAF /* bountiful-temple-766491-mobile.jpg in Resources */,
+				2607271719F34F3900732EAF /* Main.storyboard in Resources */,
+				2607278419F34FD700732EAF /* buenos-aires-argentina-temple-lds-82744-mobile.jpg in Resources */,
+				2607276E19F34FD700732EAF /* baton-rouge-temple-lds-1078084-mobile.jpg in Resources */,
+				2607276C19F34FD700732EAF /* atlanta-georgia-temple-sunset-1218213-mobile.jpg in Resources */,
+				2607278819F34FD700732EAF /* campinas-brazil-temple-lighted-1029894-mobile.jpg in Resources */,
+				2607277019F34FD700732EAF /* bern-switzerland-temple-lds-653038-mobile.jpg in Resources */,
+				2607279C19F34FD700732EAF /* cordoba-argentina-temple-rendering-780527-mobile.jpg in Resources */,
+				260727B219F34FD700732EAF /* mexico-city-temple-lds-591669-mobile.jpg in Resources */,
+				260727B019F34FD700732EAF /* madrid-spain-temple-954939-mobile.jpg in Resources */,
+				2607279E19F34FD700732EAF /* curitiba-brazil-temple-lds-851199-mobile.jpg in Resources */,
+				2607277219F34FD700732EAF /* billings-temple-lds-946466-mobile.jpg in Resources */,
+				2607277819F34FD700732EAF /* bogota-colombia-mormon-temple-856490-mobile.jpg in Resources */,
+				260727A219F34FD700732EAF /* denver-temple-lds-999518-mobile.jpg in Resources */,
+				2607279A19F34FD700732EAF /* copenhagen-denmark-temple-895949-mobile.jpg in Resources */,
+				2607279419F34FD700732EAF /* columbia-river-temple-lds-761262-mobile.jpg in Resources */,
+				2607271C19F34F3900732EAF /* LaunchScreen.xib in Resources */,
+				2607277619F34FD700732EAF /* bismarck-temple-lds-408056-mobile.jpg in Resources */,
+				2607278A19F34FD700732EAF /* cardston-alberta-temple-lds-782043-mobile.jpg in Resources */,
+				2607279019F34FD700732EAF /* ciudad-juarez-mexico-temple-lds-126122-mobile.jpg in Resources */,
+				2607278619F34FD700732EAF /* calgary-alberta-temple-before-open-house-1033408-mobile.jpg in Resources */,
+				2607276219F34FD700732EAF /* accra-ghana-temple-lds-249027-mobile.jpg in Resources */,
+				260727AA19F34FD700732EAF /* hawaii-temple-761091-mobile.jpg in Resources */,
+				260727AC19F34FD700732EAF /* helsinki-finland-temple-lds-354503-mobile.jpg in Resources */,
+				260727A619F34FD700732EAF /* draper-utah-lds-temple-1079449-mobile.jpg in Resources */,
+				2607277419F34FD700732EAF /* birmingham-temple-lds-130170-mobile.jpg in Resources */,
+				2607271919F34F3900732EAF /* Images.xcassets in Resources */,
+				2607276A19F34FD700732EAF /* asuncion-paraguay-temple-lds-298372-mobile.jpg in Resources */,
+				2607278219F34FD700732EAF /* brisbane-australia-temple-lds-745088-mobile.jpg in Resources */,
+				2607279219F34FD700732EAF /* colonia-juarez-mexico-temple-lds-1039762-mobile.jpg in Resources */,
+				2607276819F34FD700732EAF /* apia-samoa-temple-lds-460475-mobile.jpg in Resources */,
+				260727A019F34FD700732EAF /* dallas-temple-lds-850748-mobile.jpg in Resources */,
+				2607278E19F34FD700732EAF /* chicago-temple-lds-885844-mobile.jpg in Resources */,
+				2607277A19F34FD700732EAF /* boise-temple-lds-39439-mobile.jpg in Resources */,
+				260727A419F34FD700732EAF /* detroit-temple-lds-837623-mobile.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2607271F19F34F3900732EAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260727A119F34FD700732EAF /* dallas-temple-lds-850748-mobile.jpg in Resources */,
+				260727A719F34FD700732EAF /* draper-utah-lds-temple-1079449-mobile.jpg in Resources */,
+				2607278519F34FD700732EAF /* buenos-aires-argentina-temple-lds-82744-mobile.jpg in Resources */,
+				2607277F19F34FD700732EAF /* bountiful-temple-766491-mobile.jpg in Resources */,
+				2607277519F34FD700732EAF /* birmingham-temple-lds-130170-mobile.jpg in Resources */,
+				2607277119F34FD700732EAF /* bern-switzerland-temple-lds-653038-mobile.jpg in Resources */,
+				2607278F19F34FD700732EAF /* chicago-temple-lds-885844-mobile.jpg in Resources */,
+				260727A919F34FD700732EAF /* guatemala-lds-temple-82739-mobile.jpg in Resources */,
+				2607279919F34FD700732EAF /* columbus-temple-lds-406110-mobile.jpg in Resources */,
+				260727B119F34FD700732EAF /* madrid-spain-temple-954939-mobile.jpg in Resources */,
+				260727A519F34FD700732EAF /* detroit-temple-lds-837623-mobile.jpg in Resources */,
+				2607277319F34FD700732EAF /* billings-temple-lds-946466-mobile.jpg in Resources */,
+				2607276919F34FD700732EAF /* apia-samoa-temple-lds-460475-mobile.jpg in Resources */,
+				260727AF19F34FD700732EAF /* kyiv-ukraine-temple-lds-774302-mobile.jpg in Resources */,
+				2607276B19F34FD700732EAF /* asuncion-paraguay-temple-lds-298372-mobile.jpg in Resources */,
+				2607278919F34FD700732EAF /* campinas-brazil-temple-lighted-1029894-mobile.jpg in Resources */,
+				2607276119F34FD700732EAF /* aba-nigeria-temple-lds-273999-mobile.jpg in Resources */,
+				2607277D19F34FD700732EAF /* boston-temple-lds-945541-mobile.jpg in Resources */,
+				260727B319F34FD700732EAF /* mexico-city-temple-lds-591669-mobile.jpg in Resources */,
+				2607279319F34FD700732EAF /* colonia-juarez-mexico-temple-lds-1039762-mobile.jpg in Resources */,
+				2607277919F34FD700732EAF /* bogota-colombia-mormon-temple-856490-mobile.jpg in Resources */,
+				2607279119F34FD700732EAF /* ciudad-juarez-mexico-temple-lds-126122-mobile.jpg in Resources */,
+				260727AB19F34FD700732EAF /* hawaii-temple-761091-mobile.jpg in Resources */,
+				2607278319F34FD700732EAF /* brisbane-australia-temple-lds-745088-mobile.jpg in Resources */,
+				2607279519F34FD700732EAF /* columbia-river-temple-lds-761262-mobile.jpg in Resources */,
+				2607279B19F34FD700732EAF /* copenhagen-denmark-temple-895949-mobile.jpg in Resources */,
+				2607279719F34FD700732EAF /* columbia-temple-lds-83400-mobile.jpg in Resources */,
+				2607279D19F34FD700732EAF /* cordoba-argentina-temple-rendering-780527-mobile.jpg in Resources */,
+				2607276519F34FD700732EAF /* albuquerque-temple-lds-137885-mobile.jpg in Resources */,
+				2607276719F34FD700732EAF /* anchorage-temple-lds-253274-mobile.jpg in Resources */,
+				260727AD19F34FD700732EAF /* helsinki-finland-temple-lds-354503-mobile.jpg in Resources */,
+				2607279F19F34FD700732EAF /* curitiba-brazil-temple-lds-851199-mobile.jpg in Resources */,
+				2607276F19F34FD700732EAF /* baton-rouge-temple-lds-1078084-mobile.jpg in Resources */,
+				2607278D19F34FD700732EAF /* cebu-philippines-temple-lds-852837-mobile.jpg in Resources */,
+				2607277B19F34FD700732EAF /* boise-temple-lds-39439-mobile.jpg in Resources */,
+				2607278B19F34FD700732EAF /* cardston-alberta-temple-lds-782043-mobile.jpg in Resources */,
+				2607277719F34FD700732EAF /* bismarck-temple-lds-408056-mobile.jpg in Resources */,
+				260727A319F34FD700732EAF /* denver-temple-lds-999518-mobile.jpg in Resources */,
+				2607276D19F34FD700732EAF /* atlanta-georgia-temple-sunset-1218213-mobile.jpg in Resources */,
+				2607278119F34FD700732EAF /* brigham-city-utah-temple-dedication-day-1027033-mobile.jpg in Resources */,
+				2607278719F34FD700732EAF /* calgary-alberta-temple-before-open-house-1033408-mobile.jpg in Resources */,
+				2607276319F34FD700732EAF /* accra-ghana-temple-lds-249027-mobile.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2607270819F34F3900732EAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267BAEBA19F49A4900AAFAFF /* TempleCollection.swift in Sources */,
+				26A2B45919F3F269008E870E /* TempleCollectionViewCell.swift in Sources */,
+				2607271219F34F3900732EAF /* AppDelegate.swift in Sources */,
+				26A2B45719F3EF09008E870E /* TempleCollectionViewController.swift in Sources */,
+				2602000719F4A6D6009EC6DA /* Temple.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2607271D19F34F3900732EAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2607272819F34F3900732EAF /* TempleMatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2607272319F34F3900732EAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2607270B19F34F3900732EAF /* TempleMatch */;
+			targetProxy = 2607272219F34F3900732EAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2607271519F34F3900732EAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2607271619F34F3900732EAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2607271A19F34F3900732EAF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2607271B19F34F3900732EAF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2607272919F34F3900732EAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2607272A19F34F3900732EAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2607272C19F34F3900732EAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TempleMatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2607272D19F34F3900732EAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TempleMatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2607272F19F34F3900732EAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TempleMatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempleMatch.app/TempleMatch";
+			};
+			name = Debug;
+		};
+		2607273019F34F3900732EAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TempleMatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempleMatch.app/TempleMatch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2607270719F34F3900732EAF /* Build configuration list for PBXProject "TempleMatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2607272919F34F3900732EAF /* Debug */,
+				2607272A19F34F3900732EAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2607272B19F34F3900732EAF /* Build configuration list for PBXNativeTarget "TempleMatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2607272C19F34F3900732EAF /* Debug */,
+				2607272D19F34F3900732EAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2607272E19F34F3900732EAF /* Build configuration list for PBXNativeTarget "TempleMatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2607272F19F34F3900732EAF /* Debug */,
+				2607273019F34F3900732EAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2607270419F34F3900732EAF /* Project object */;
+}
