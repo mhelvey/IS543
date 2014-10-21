@@ -9,18 +9,21 @@
 import UIKit
 
 class TempleCollectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var templeTable: UITableView!
+    @IBOutlet weak var collection: UICollectionView!
     
+    
+    @IBOutlet weak var matchLabel: UIBarButtonItem!
+    @IBOutlet weak var incorrectLabel: UIBarButtonItem!
+    @IBOutlet weak var correctLabel: UIBarButtonItem!
 
     @IBAction func resetButton(sender: UIBarButtonItem) {
-        NSLog("reset")
+        reset()
     }
-
 
     @IBAction func modeButton(sender: UIBarButtonItem) {
+//        mode()
     }
-    
-
-    @IBOutlet weak var matchLabel: UIBarButtonItem!
     var templeCollection = TempleCollection()
     
     var temples = [Temple]()
@@ -55,12 +58,18 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
             if indexPath.row == selectedTempleCell {
                 templeCell.templeImage.layer.borderColor = (UIColor( red: 1.0, green: 1.0, blue: 0.0, alpha: 1.0)).CGColor
                 cell.alpha = 0.5
-              temple1 = temple.name
+                temple1 = temple.name
                 NSLog("1 \(temple1)")
                 templeMatch()
                 if match == true{
                     temples.removeAtIndex(selectedTempleCell)
-                    collectionView.reloadInputViews()
+                    cell.alpha = 1.0
+                    templeCell.templeImage.layer.borderColor = (UIColor( red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)).CGColor
+                    selectedTempleCell = -1
+                    match = false
+                    collectionView.reloadData()
+                    templeTable.reloadData()
+                    
                 }
             } else {
                 cell.alpha = 1.0
@@ -105,7 +114,12 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
             templeMatch()
             if match == true{
                 temples.removeAtIndex(selectedTempleTable)
+                selectedTempleTable = -1
+                match = false
+                tableView.reloadData()
+                collection.reloadData()
             }
+            
         }
         
         return tableCell
@@ -116,10 +130,8 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
     // MARK: Table view delegate
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedTempleTable = indexPath.row
-//        func indexPathForSelectedRow() -> NSIndexPath?
         
-        tableView.reloadData()
-        
+        tableView.reloadData()        
     }
     
     func templeMatch() -> Bool {
@@ -134,8 +146,23 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
         return match
     }
 
-//    func reset() {
-//        
-//    }
+    func reset() {
+        for t in temples{
+            var i = 0
+            temples.removeAtIndex(i)
+            i++
+        }
+        for t in templeCollection.TEMPLES{
+            temples.append(t)
+        }
+        
+        selectedTempleCell = -1
+        selectedTempleTable = -1
+        NSLog("reset complete")
+        templeTable.reloadData()
+        collection.reloadData()
+        
+    }
+    
 
 }
