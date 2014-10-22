@@ -97,7 +97,12 @@
 		260727B119F34FD700732EAF /* madrid-spain-temple-954939-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275D19F34FD700732EAF /* madrid-spain-temple-954939-mobile.jpg */; };
 		260727B219F34FD700732EAF /* mexico-city-temple-lds-591669-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275E19F34FD700732EAF /* mexico-city-temple-lds-591669-mobile.jpg */; };
 		260727B319F34FD700732EAF /* mexico-city-temple-lds-591669-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2607275E19F34FD700732EAF /* mexico-city-temple-lds-591669-mobile.jpg */; };
+		260B4D6319F7701C00F025B7 /* Oakland_Mormon_Temple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 260B4D6219F7701C00F025B7 /* Oakland_Mormon_Temple.jpg */; };
 		267BAEBA19F49A4900AAFAFF /* TempleCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267BAEB919F49A4900AAFAFF /* TempleCollection.swift */; };
+		268EFBDC19F728CE00DDC79D /* oakland-california-808x480-0001569s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 268EFBD819F728CE00DDC79D /* oakland-california-808x480-0001569s.jpg */; };
+		268EFBDD19F728CE00DDC79D /* oquirrh-mountain-utah-450x480-CWD_29b31802.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 268EFBD919F728CE00DDC79D /* oquirrh-mountain-utah-450x480-CWD_29b31802.jpg */; };
+		268EFBDE19F728CE00DDC79D /* Paris-ExteriorRenderings-Nov2011_808x480_web.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 268EFBDA19F728CE00DDC79D /* Paris-ExteriorRenderings-Nov2011_808x480_web.jpg */; };
+		268EFBDF19F728CE00DDC79D /* the-hague-netherlands-808x480-CU061005_sm001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 268EFBDB19F728CE00DDC79D /* the-hague-netherlands-808x480-CU061005_sm001.jpg */; };
 		26A2B45719F3EF09008E870E /* TempleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A2B45619F3EF09008E870E /* TempleCollectionViewController.swift */; };
 		26A2B45919F3F269008E870E /* TempleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A2B45819F3F269008E870E /* TempleCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -165,7 +170,12 @@
 		2607275C19F34FD700732EAF /* kyiv-ukraine-temple-lds-774302-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kyiv-ukraine-temple-lds-774302-mobile.jpg"; sourceTree = "<group>"; };
 		2607275D19F34FD700732EAF /* madrid-spain-temple-954939-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "madrid-spain-temple-954939-mobile.jpg"; sourceTree = "<group>"; };
 		2607275E19F34FD700732EAF /* mexico-city-temple-lds-591669-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mexico-city-temple-lds-591669-mobile.jpg"; sourceTree = "<group>"; };
+		260B4D6219F7701C00F025B7 /* Oakland_Mormon_Temple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Oakland_Mormon_Temple.jpg; sourceTree = "<group>"; };
 		267BAEB919F49A4900AAFAFF /* TempleCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempleCollection.swift; sourceTree = "<group>"; };
+		268EFBD819F728CE00DDC79D /* oakland-california-808x480-0001569s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "oakland-california-808x480-0001569s.jpg"; sourceTree = "<group>"; };
+		268EFBD919F728CE00DDC79D /* oquirrh-mountain-utah-450x480-CWD_29b31802.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "oquirrh-mountain-utah-450x480-CWD_29b31802.jpg"; sourceTree = "<group>"; };
+		268EFBDA19F728CE00DDC79D /* Paris-ExteriorRenderings-Nov2011_808x480_web.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Paris-ExteriorRenderings-Nov2011_808x480_web.jpg"; sourceTree = "<group>"; };
+		268EFBDB19F728CE00DDC79D /* the-hague-netherlands-808x480-CU061005_sm001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "the-hague-netherlands-808x480-CU061005_sm001.jpg"; sourceTree = "<group>"; };
 		26A2B45619F3EF09008E870E /* TempleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempleCollectionViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		26A2B45819F3F269008E870E /* TempleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempleCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,6 +232,7 @@
 		2607270F19F34F3900732EAF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				260B4D6219F7701C00F025B7 /* Oakland_Mormon_Temple.jpg */,
 				2607271119F34F3900732EAF /* AppDelegate.swift */,
 				2607271019F34F3900732EAF /* Info.plist */,
 			);
@@ -275,6 +286,10 @@
 		2607273419F34FD700732EAF /* Temple Photos */ = {
 			isa = PBXGroup;
 			children = (
+				268EFBD819F728CE00DDC79D /* oakland-california-808x480-0001569s.jpg */,
+				268EFBD919F728CE00DDC79D /* oquirrh-mountain-utah-450x480-CWD_29b31802.jpg */,
+				268EFBDA19F728CE00DDC79D /* Paris-ExteriorRenderings-Nov2011_808x480_web.jpg */,
+				268EFBDB19F728CE00DDC79D /* the-hague-netherlands-808x480-CU061005_sm001.jpg */,
 				2607273519F34FD700732EAF /* aba-nigeria-temple-lds-273999-mobile.jpg */,
 				2607273619F34FD700732EAF /* accra-ghana-temple-lds-249027-mobile.jpg */,
 				2607273719F34FD700732EAF /* albuquerque-temple-lds-137885-mobile.jpg */,
@@ -403,6 +418,7 @@
 			files = (
 				260727A819F34FD700732EAF /* guatemala-lds-temple-82739-mobile.jpg in Resources */,
 				2607279819F34FD700732EAF /* columbus-temple-lds-406110-mobile.jpg in Resources */,
+				268EFBDE19F728CE00DDC79D /* Paris-ExteriorRenderings-Nov2011_808x480_web.jpg in Resources */,
 				2607279619F34FD700732EAF /* columbia-temple-lds-83400-mobile.jpg in Resources */,
 				2607276019F34FD700732EAF /* aba-nigeria-temple-lds-273999-mobile.jpg in Resources */,
 				2607276419F34FD700732EAF /* albuquerque-temple-lds-137885-mobile.jpg in Resources */,
@@ -421,6 +437,7 @@
 				2607279C19F34FD700732EAF /* cordoba-argentina-temple-rendering-780527-mobile.jpg in Resources */,
 				260727B219F34FD700732EAF /* mexico-city-temple-lds-591669-mobile.jpg in Resources */,
 				260727B019F34FD700732EAF /* madrid-spain-temple-954939-mobile.jpg in Resources */,
+				260B4D6319F7701C00F025B7 /* Oakland_Mormon_Temple.jpg in Resources */,
 				2607279E19F34FD700732EAF /* curitiba-brazil-temple-lds-851199-mobile.jpg in Resources */,
 				2607277219F34FD700732EAF /* billings-temple-lds-946466-mobile.jpg in Resources */,
 				2607277819F34FD700732EAF /* bogota-colombia-mormon-temple-856490-mobile.jpg in Resources */,
@@ -434,9 +451,11 @@
 				2607278619F34FD700732EAF /* calgary-alberta-temple-before-open-house-1033408-mobile.jpg in Resources */,
 				2607276219F34FD700732EAF /* accra-ghana-temple-lds-249027-mobile.jpg in Resources */,
 				260727AA19F34FD700732EAF /* hawaii-temple-761091-mobile.jpg in Resources */,
+				268EFBDC19F728CE00DDC79D /* oakland-california-808x480-0001569s.jpg in Resources */,
 				260727AC19F34FD700732EAF /* helsinki-finland-temple-lds-354503-mobile.jpg in Resources */,
 				260727A619F34FD700732EAF /* draper-utah-lds-temple-1079449-mobile.jpg in Resources */,
 				2607277419F34FD700732EAF /* birmingham-temple-lds-130170-mobile.jpg in Resources */,
+				268EFBDD19F728CE00DDC79D /* oquirrh-mountain-utah-450x480-CWD_29b31802.jpg in Resources */,
 				2607271919F34F3900732EAF /* Images.xcassets in Resources */,
 				2607276A19F34FD700732EAF /* asuncion-paraguay-temple-lds-298372-mobile.jpg in Resources */,
 				2607278219F34FD700732EAF /* brisbane-australia-temple-lds-745088-mobile.jpg in Resources */,
@@ -445,6 +464,7 @@
 				260727A019F34FD700732EAF /* dallas-temple-lds-850748-mobile.jpg in Resources */,
 				2607278E19F34FD700732EAF /* chicago-temple-lds-885844-mobile.jpg in Resources */,
 				2607277A19F34FD700732EAF /* boise-temple-lds-39439-mobile.jpg in Resources */,
+				268EFBDF19F728CE00DDC79D /* the-hague-netherlands-808x480-CU061005_sm001.jpg in Resources */,
 				260727A419F34FD700732EAF /* detroit-temple-lds-837623-mobile.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,9 +10,7 @@ import UIKit
 
 class Temple {
     var name = ""
-    var filename = ""
-    var selected = false
-    
+    var filename = ""    
     
     init (filename: String, name: String){
         self.filename = filename

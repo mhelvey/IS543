@@ -54,6 +54,10 @@ class TempleCollection {
         Temple(filename: "hawaii-temple-761091-mobile.jpg", name: "Laie Hawaii"),
         Temple(filename: "madrid-spain-temple-954939-mobile.jpg", name: "Madrid Spain"),
         Temple(filename: "mexico-city-temple-lds-591669-mobile.jpg", name: "Mexico City Mexico"),
+        Temple(filename: "oakland-california-808x480-0001569s.jpg", name: "Oakland California"),
+        Temple(filename: "oquirrh-mountain-utah-450x480-CWD_29b31802.jpg", name: "Oquirrh Mountain Utah"),
+        Temple(filename: "Paris-ExteriorRenderings-Nov2011_808x480_web.jpg", name: "Paris France"),
+        Temple(filename: "the-hague-netherlands-808x480-CU061005_sm001.jpg", name: "The Hague Netherlands"),
     ]
     
 

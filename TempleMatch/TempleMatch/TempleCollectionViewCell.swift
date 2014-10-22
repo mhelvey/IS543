@@ -10,7 +10,7 @@ import UIKit
 
 class TempleCollectionViewCell : UICollectionViewCell {
     
-    
+    // MARK: Outlets
     @IBOutlet weak var templeName: UILabel!
     @IBOutlet weak var templeImage: UIImageView!
 }
