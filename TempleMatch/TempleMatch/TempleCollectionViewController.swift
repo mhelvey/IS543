@@ -129,7 +129,7 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         let temple = temples[indexPath.row]
-        let size = UIImage(named: temple.filename).size
+        let size = UIImage(named: temple.filename)!.size
         let height = CGFloat(148.00)
         let width = height * size.width / size.height
         NSLog("\(size.width) \(size.height)")
@@ -145,7 +145,7 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
         var tableCell: UITableViewCell
         tableCell = tableView.dequeueReusableCellWithIdentifier("templeName") as UITableViewCell
         let temple = temples2[indexPath.row]
-        tableCell.textLabel!.text = "\(temple.name)"
+        tableCell.textLabel.text = "\(temple.name)"
         return tableCell
     }
     
@@ -156,7 +156,7 @@ class TempleCollectionViewController: UIViewController, UICollectionViewDataSour
         var tableCell: UITableViewCell
         tableCell = tableView.dequeueReusableCellWithIdentifier("templeName") as UITableViewCell
         let temple = temples2[indexPath.row]
-        tableCell.textLabel!.text = "\(temple.name)"
+        tableCell.textLabel.text = "\(temple.name)"
         if indexPath.row == selectedTempleTable {
             temple2 = temple.name
             NSLog("2 \(temple2)")
