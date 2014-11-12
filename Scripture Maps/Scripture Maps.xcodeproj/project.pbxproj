@@ -14,12 +14,15 @@
 		261AB1961A110E1D00BA9F55 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261AB1951A110E1D00BA9F55 /* Images.xcassets */; };
 		261AB1991A110E1D00BA9F55 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261AB1971A110E1D00BA9F55 /* LaunchScreen.xib */; };
 		261AB1A51A110E1D00BA9F55 /* Scripture_MapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261AB1A41A110E1D00BA9F55 /* Scripture_MapsTests.swift */; };
-		261AB1C11A1111CB00BA9F55 /* geo.20.db in Resources */ = {isa = PBXBuildFile; fileRef = 261AB1AE1A11100200BA9F55 /* geo.20.db */; };
 		261AB1C41A11124700BA9F55 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261AB1BA1A11116500BA9F55 /* SQLite.framework */; };
 		261AB1C61A11125000BA9F55 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261AB1C51A11125000BA9F55 /* MapKit.framework */; };
 		261AB1C81A1112C900BA9F55 /* SQLite.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 261AB1BA1A11116500BA9F55 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		261AB1CA1A1113F200BA9F55 /* GeoDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261AB1C91A1113F200BA9F55 /* GeoDatabase.swift */; };
-		261AB1CC1A11156C00BA9F55 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261AB1CB1A11156C00BA9F55 /* Book.swift */; };
+		265A45451A13AF5300C1F2E2 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265A453F1A13AF5300C1F2E2 /* Book.swift */; };
+		265A45461A13AF5300C1F2E2 /* geo.21.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 265A45401A13AF5300C1F2E2 /* geo.21.sqlite */; };
+		265A45471A13AF5300C1F2E2 /* GeoDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265A45411A13AF5300C1F2E2 /* GeoDatabase.swift */; };
+		265A45481A13AF5300C1F2E2 /* GeoPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265A45421A13AF5300C1F2E2 /* GeoPlace.swift */; };
+		265A45491A13AF5300C1F2E2 /* scripture.css in Resources */ = {isa = PBXBuildFile; fileRef = 265A45431A13AF5300C1F2E2 /* scripture.css */; };
+		265A454A1A13AF5300C1F2E2 /* ScriptureRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265A45441A13AF5300C1F2E2 /* ScriptureRenderer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,11 +95,14 @@
 		261AB19E1A110E1D00BA9F55 /* Scripture MapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scripture MapsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		261AB1A31A110E1D00BA9F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		261AB1A41A110E1D00BA9F55 /* Scripture_MapsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scripture_MapsTests.swift; sourceTree = "<group>"; };
-		261AB1AE1A11100200BA9F55 /* geo.20.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = geo.20.db; sourceTree = "<group>"; };
 		261AB1B21A11116500BA9F55 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../iOS Demo/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		261AB1C51A11125000BA9F55 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		261AB1C91A1113F200BA9F55 /* GeoDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoDatabase.swift; sourceTree = "<group>"; };
-		261AB1CB1A11156C00BA9F55 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		265A453F1A13AF5300C1F2E2 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		265A45401A13AF5300C1F2E2 /* geo.21.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = geo.21.sqlite; path = ../geo.21.sqlite; sourceTree = "<group>"; };
+		265A45411A13AF5300C1F2E2 /* GeoDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoDatabase.swift; sourceTree = "<group>"; };
+		265A45421A13AF5300C1F2E2 /* GeoPlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoPlace.swift; sourceTree = "<group>"; };
+		265A45431A13AF5300C1F2E2 /* scripture.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = scripture.css; path = ../scripture.css; sourceTree = "<group>"; };
+		265A45441A13AF5300C1F2E2 /* ScriptureRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptureRenderer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,7 @@
 				261AB1B01A11107400BA9F55 /* View */,
 				261AB1B11A11107F00BA9F55 /* Controller */,
 				261AB1951A110E1D00BA9F55 /* Images.xcassets */,
+				265A454B1A13B1DC00C1F2E2 /* Assets */,
 				261AB18A1A110E1D00BA9F55 /* Supporting Files */,
 			);
 			path = "Scripture Maps";
@@ -179,9 +186,10 @@
 		261AB1AF1A11106000BA9F55 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				261AB1AE1A11100200BA9F55 /* geo.20.db */,
-				261AB1C91A1113F200BA9F55 /* GeoDatabase.swift */,
-				261AB1CB1A11156C00BA9F55 /* Book.swift */,
+				265A453F1A13AF5300C1F2E2 /* Book.swift */,
+				265A45411A13AF5300C1F2E2 /* GeoDatabase.swift */,
+				265A45421A13AF5300C1F2E2 /* GeoPlace.swift */,
+				265A45441A13AF5300C1F2E2 /* ScriptureRenderer.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -215,6 +223,15 @@
 				261AB1C01A11116500BA9F55 /* SQLite Mac Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		265A454B1A13B1DC00C1F2E2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				265A45431A13AF5300C1F2E2 /* scripture.css */,
+				265A45401A13AF5300C1F2E2 /* geo.21.sqlite */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,7 +353,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				261AB1C11A1111CB00BA9F55 /* geo.20.db in Resources */,
+				265A45491A13AF5300C1F2E2 /* scripture.css in Resources */,
+				265A45461A13AF5300C1F2E2 /* geo.21.sqlite in Resources */,
 				261AB1941A110E1D00BA9F55 /* Main.storyboard in Resources */,
 				261AB1991A110E1D00BA9F55 /* LaunchScreen.xib in Resources */,
 				261AB1961A110E1D00BA9F55 /* Images.xcassets in Resources */,
@@ -357,11 +375,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				261AB1CA1A1113F200BA9F55 /* GeoDatabase.swift in Sources */,
+				265A45471A13AF5300C1F2E2 /* GeoDatabase.swift in Sources */,
+				265A454A1A13AF5300C1F2E2 /* ScriptureRenderer.swift in Sources */,
 				261AB1911A110E1D00BA9F55 /* DetailViewController.swift in Sources */,
 				261AB18F1A110E1D00BA9F55 /* MasterViewController.swift in Sources */,
-				261AB1CC1A11156C00BA9F55 /* Book.swift in Sources */,
+				265A45451A13AF5300C1F2E2 /* Book.swift in Sources */,
 				261AB18D1A110E1D00BA9F55 /* AppDelegate.swift in Sources */,
+				265A45481A13AF5300C1F2E2 /* GeoPlace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,6 +580,7 @@
 				261AB1AA1A110E1D00BA9F55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		261AB1AB1A110E1D00BA9F55 /* Build configuration list for PBXNativeTarget "Scripture MapsTests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +589,7 @@
 				261AB1AD1A110E1D00BA9F55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
