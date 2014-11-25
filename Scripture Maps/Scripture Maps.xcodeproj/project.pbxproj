@@ -215,9 +215,9 @@
 			children = (
 				261AB18C1A110E1D00BA9F55 /* AppDelegate.swift */,
 				2670E8C71A1C418900809657 /* BooksViewController.swift */,
-				26B033231A200A62002F90EB /* ScriptureViewController.swift */,
 				2670E8C91A1C490E00809657 /* ChaptersViewController.swift */,
 				261AB1901A110E1D00BA9F55 /* MapViewController.swift */,
+				26B033231A200A62002F90EB /* ScriptureViewController.swift */,
 				261AB18E1A110E1D00BA9F55 /* VolumesViewController.swift */,
 			);
 			name = Controller;
