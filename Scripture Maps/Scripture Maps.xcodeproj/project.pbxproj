@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		261AB18D1A110E1D00BA9F55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261AB18C1A110E1D00BA9F55 /* AppDelegate.swift */; };
-		261AB18F1A110E1D00BA9F55 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261AB18E1A110E1D00BA9F55 /* MasterViewController.swift */; };
-		261AB1911A110E1D00BA9F55 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261AB1901A110E1D00BA9F55 /* DetailViewController.swift */; };
+		261AB18F1A110E1D00BA9F55 /* VolumesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261AB18E1A110E1D00BA9F55 /* VolumesViewController.swift */; };
+		261AB1911A110E1D00BA9F55 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261AB1901A110E1D00BA9F55 /* MapViewController.swift */; };
 		261AB1941A110E1D00BA9F55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261AB1921A110E1D00BA9F55 /* Main.storyboard */; };
 		261AB1961A110E1D00BA9F55 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261AB1951A110E1D00BA9F55 /* Images.xcassets */; };
 		261AB1991A110E1D00BA9F55 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261AB1971A110E1D00BA9F55 /* LaunchScreen.xib */; };
@@ -23,6 +23,9 @@
 		265A45481A13AF5300C1F2E2 /* GeoPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265A45421A13AF5300C1F2E2 /* GeoPlace.swift */; };
 		265A45491A13AF5300C1F2E2 /* scripture.css in Resources */ = {isa = PBXBuildFile; fileRef = 265A45431A13AF5300C1F2E2 /* scripture.css */; };
 		265A454A1A13AF5300C1F2E2 /* ScriptureRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265A45441A13AF5300C1F2E2 /* ScriptureRenderer.swift */; };
+		2670E8C81A1C418900809657 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2670E8C71A1C418900809657 /* BooksViewController.swift */; };
+		2670E8CA1A1C490E00809657 /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2670E8C91A1C490E00809657 /* ChaptersViewController.swift */; };
+		26B033241A200A63002F90EB /* ScriptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B033231A200A62002F90EB /* ScriptureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,8 +90,8 @@
 		261AB1871A110E1D00BA9F55 /* Scripture Maps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scripture Maps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		261AB18B1A110E1D00BA9F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		261AB18C1A110E1D00BA9F55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		261AB18E1A110E1D00BA9F55 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		261AB1901A110E1D00BA9F55 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		261AB18E1A110E1D00BA9F55 /* VolumesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumesViewController.swift; sourceTree = "<group>"; };
+		261AB1901A110E1D00BA9F55 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		261AB1931A110E1D00BA9F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		261AB1951A110E1D00BA9F55 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		261AB1981A110E1D00BA9F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -103,6 +106,9 @@
 		265A45421A13AF5300C1F2E2 /* GeoPlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoPlace.swift; sourceTree = "<group>"; };
 		265A45431A13AF5300C1F2E2 /* scripture.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = scripture.css; path = ../scripture.css; sourceTree = "<group>"; };
 		265A45441A13AF5300C1F2E2 /* ScriptureRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptureRenderer.swift; sourceTree = "<group>"; };
+		2670E8C71A1C418900809657 /* BooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
+		2670E8C91A1C490E00809657 /* ChaptersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
+		26B033231A200A62002F90EB /* ScriptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,8 +204,8 @@
 		261AB1B01A11107400BA9F55 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				261AB1921A110E1D00BA9F55 /* Main.storyboard */,
 				261AB1971A110E1D00BA9F55 /* LaunchScreen.xib */,
+				261AB1921A110E1D00BA9F55 /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -207,9 +213,12 @@
 		261AB1B11A11107F00BA9F55 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				261AB18E1A110E1D00BA9F55 /* MasterViewController.swift */,
 				261AB18C1A110E1D00BA9F55 /* AppDelegate.swift */,
-				261AB1901A110E1D00BA9F55 /* DetailViewController.swift */,
+				2670E8C71A1C418900809657 /* BooksViewController.swift */,
+				26B033231A200A62002F90EB /* ScriptureViewController.swift */,
+				2670E8C91A1C490E00809657 /* ChaptersViewController.swift */,
+				261AB1901A110E1D00BA9F55 /* MapViewController.swift */,
+				261AB18E1A110E1D00BA9F55 /* VolumesViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -376,12 +385,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				265A45471A13AF5300C1F2E2 /* GeoDatabase.swift in Sources */,
+				2670E8C81A1C418900809657 /* BooksViewController.swift in Sources */,
+				26B033241A200A63002F90EB /* ScriptureViewController.swift in Sources */,
 				265A454A1A13AF5300C1F2E2 /* ScriptureRenderer.swift in Sources */,
-				261AB1911A110E1D00BA9F55 /* DetailViewController.swift in Sources */,
-				261AB18F1A110E1D00BA9F55 /* MasterViewController.swift in Sources */,
+				261AB1911A110E1D00BA9F55 /* MapViewController.swift in Sources */,
+				261AB18F1A110E1D00BA9F55 /* VolumesViewController.swift in Sources */,
 				265A45451A13AF5300C1F2E2 /* Book.swift in Sources */,
 				261AB18D1A110E1D00BA9F55 /* AppDelegate.swift in Sources */,
 				265A45481A13AF5300C1F2E2 /* GeoPlace.swift in Sources */,
+				2670E8CA1A1C490E00809657 /* ChaptersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

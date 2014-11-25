@@ -1,5 +1,5 @@
 //
-//  DetailViewController.swift
+//  MapwViewController.swift
 //  Scripture Maps
 //
 //  Created by Michael Helvey on 11/10/14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class MapViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
