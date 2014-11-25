@@ -13,6 +13,9 @@ class ScriptureViewController : UIViewController, UIWebViewDelegate {
     
     var book: Book!
     var chapter = 0
+    var mapViewConfiguration = ""
+    
+    weak var mapViewController: MapViewController?
     
     // MARK: - Outlets
     @IBOutlet weak var webView: UIWebView!
@@ -25,6 +28,35 @@ class ScriptureViewController : UIViewController, UIWebViewDelegate {
         let html = ScriptureRenderer.sharedRenderer.htmlForBookId(book.id, chapter: chapter)
         // NEDSWORK: load indicated book/chapter into web view
         webView.loadHTMLString(html, baseURL: nil)
+        
+        configureMapViewController()
+    }
+    
+    func configureMapViewController() {
+        if let splitVC = splitViewController {
+            if let navVC = splitVC.viewControllers.last as? UINavigationController {
+                mapViewController = navVC.topViewController as? MapViewController
+            }
+        }
+
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        configureMapViewController()
+    }
+    // MARK: - Segues
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "Show Map" {
+            let navVC = segue.destinationViewController as UINavigationController
+            let mapVC = navVC.topViewController as MapViewController
+            
+            //NEEDSWORK: Configure map view according to current context
+            
+            mapVC.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
+            mapVC.navigationItem.leftItemsSupplementBackButton = true
+        }
     }
     
     // MARK: - Webview delegate
@@ -34,9 +66,14 @@ class ScriptureViewController : UIViewController, UIWebViewDelegate {
         if request.URL.absoluteString?.rangeOfString(ScriptureRenderer.sharedRenderer.BASE_URL) != nil {
             NSLog("geocoded place reguest: \(request)")
 
-            // NEEDSWORD: adjust to show map request point at default zoom level
+            if let mapVC = mapViewController{
+                NSLog("your mom \(mapVC)")
+                // NEEDSWORD: adjust to show map request point at default zoom level
+
+            } else {
+                performSegueWithIdentifier("Show Map", sender: self)
+            }
             
-            request.URL.parameterString
             return false
         }
         return true

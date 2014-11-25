@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var mapView: MKMapView!
 
 
     var detailItem: AnyObject? {
@@ -31,15 +33,58 @@ class MapViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
         self.configureView()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        var annotation = MKPointAnnotation()
+        
+        annotation.coordinate = CLLocationCoordinate2DMake(40.2506, -111.65247)
+        annotation.title = "Tanner Building"
+        annotation.subtitle = "BYU Campus"
+        
+        mapView.addAnnotation(annotation)
+        
+        var camera = MKMapCamera(
+            lookingAtCenterCoordinate: CLLocationCoordinate2DMake(40.2506, -111.65247),
+            fromEyeCoordinate: CLLocationCoordinate2DMake(40.2406, -111.65247),
+            eyeAltitude: 300)
+        mapView.setCamera(camera, animated: true)
     }
 
+    // MARK: - Map View Delegate
+    
+    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+        let reuseIdentifier = "Pin"
+        
+        var view = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseIdentifier)
+        
+        if view == nil{
+            var pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseIdentifier)
+            
+            pinView.canShowCallout = true
+            pinView.animatesDrop = true
+            pinView.pinColor = .Green
+            view = pinView
+
+        } else {
+            view.annotation = annotation
+        }
+        
+        return view
+    }
+    
+    // MARK: - Actions
+    
+    @IBAction func setMapRegion(sender: AnyObject) {
+        
+        let region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(40.23, -111.62), MKCoordinateSpanMake(1, 1))
+        mapView.setRegion(region, animated: true)
+    }
+    
 
 }
 
