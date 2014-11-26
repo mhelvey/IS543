@@ -11,10 +11,12 @@ import UIKit
 class BooksViewController : UITableViewController {
     var books: [Book]!
     
+    //determines number of cells to make
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return books.count
     }
     
+    // names cells
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("BookCell", forIndexPath: indexPath) as UITableViewCell
         
@@ -23,6 +25,7 @@ class BooksViewController : UITableViewController {
         return cell
     }
     
+    //performs segues depending on if book selected has chapters or not
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if let numChapters = books[indexPath.row].numChapters {
             performSegueWithIdentifier("Show Chapters", sender: self)
@@ -32,6 +35,7 @@ class BooksViewController : UITableViewController {
         }
     }
     
+    //prepares segues by creating a destination view controller as either a scripture or chapter view controller
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "Show Scripture" {

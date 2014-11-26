@@ -55,6 +55,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="mapTitle" destination="mOI-FS-AaM" id="2yg-cV-vKj"/>
                         <outlet property="mapView" destination="P9G-JG-zFY" id="fpo-sb-EkH"/>
                     </connections>
                 </viewController>
