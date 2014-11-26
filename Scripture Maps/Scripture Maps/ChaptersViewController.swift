@@ -20,22 +20,22 @@ class ChaptersViewController : UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ChapterCell", forIndexPath: indexPath) as UITableViewCell
         
-        cell.textLabel.text = "yahoo"
+        cell.textLabel.text = "\(book.fullName) \(indexPath.row + 1)"
         
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("Show Scripture", sender: self)
-    }
+//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        performSegueWithIdentifier("Show Scripture", sender: self)
+//    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "Show Scripture" {
             if let indexPath = tableView.indexPathForSelectedRow(){
                 if let destVC = segue.destinationViewController as? ScriptureViewController{
-                    destVC.book = books[indexPath.row]
-                    destVC.chapter = 1
-                    destVC.title = books[indexPath.row].fullName
+                    destVC.book = book
+                    destVC.chapter = indexPath.row + 1
+                    destVC.title = "\(book.fullName) \(indexPath.row + 1)"
                 }
             }
         }

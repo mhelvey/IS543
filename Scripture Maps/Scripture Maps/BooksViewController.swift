@@ -24,17 +24,16 @@ class BooksViewController : UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        NSLog("\(books[indexPath.row].fullName)")
-        NSLog("\(books[indexPath.row].numChapters)")
-        if books[indexPath.row].numChapters > 1 {
+        if let numChapters = books[indexPath.row].numChapters {
             performSegueWithIdentifier("Show Chapters", sender: self)
+            
         } else{
             performSegueWithIdentifier("Show Scripture", sender: self)
         }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        NSLog("\(segue.identifier)")
+        
         if segue.identifier == "Show Scripture" {
             if let indexPath = tableView.indexPathForSelectedRow(){
                 

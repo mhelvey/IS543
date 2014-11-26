@@ -8,11 +8,14 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 class MapViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
+    
+    var locationID = ""
 
 
     var detailItem: AnyObject? {
@@ -41,7 +44,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         var annotation = MKPointAnnotation()
-        
+        NSLog(locationID)
         annotation.coordinate = CLLocationCoordinate2DMake(40.2506, -111.65247)
         annotation.title = "Tanner Building"
         annotation.subtitle = "BYU Campus"
@@ -69,9 +72,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             pinView.animatesDrop = true
             pinView.pinColor = .Green
             view = pinView
-
+            
         } else {
             view.annotation = annotation
+            NSLog("this is the location \(locationID)")
         }
         
         return view

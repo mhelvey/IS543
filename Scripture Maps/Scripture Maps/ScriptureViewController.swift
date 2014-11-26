@@ -14,6 +14,7 @@ class ScriptureViewController : UIViewController, UIWebViewDelegate {
     var book: Book!
     var chapter = 0
     var mapViewConfiguration = ""
+    var locationID = ""
     
     weak var mapViewController: MapViewController?
     
@@ -26,7 +27,6 @@ class ScriptureViewController : UIViewController, UIWebViewDelegate {
         super.viewDidLoad()
         
         let html = ScriptureRenderer.sharedRenderer.htmlForBookId(book.id, chapter: chapter)
-        // NEDSWORK: load indicated book/chapter into web view
         webView.loadHTMLString(html, baseURL: nil)
         
         configureMapViewController()
@@ -53,7 +53,7 @@ class ScriptureViewController : UIViewController, UIWebViewDelegate {
             let mapVC = navVC.topViewController as MapViewController
             
             //NEEDSWORK: Configure map view according to current context
-            
+            mapVC.locationID = locationID
             mapVC.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
             mapVC.navigationItem.leftItemsSupplementBackButton = true
         }
@@ -65,11 +65,12 @@ class ScriptureViewController : UIViewController, UIWebViewDelegate {
         
         if request.URL.absoluteString?.rangeOfString(ScriptureRenderer.sharedRenderer.BASE_URL) != nil {
             NSLog("geocoded place reguest: \(request)")
-
+            locationID = request.URL.lastPathComponent
+            NSLog(locationID)
             if let mapVC = mapViewController{
                 NSLog("your mom \(mapVC)")
                 // NEEDSWORD: adjust to show map request point at default zoom level
-
+                mapVC.locationID = locationID
             } else {
                 performSegueWithIdentifier("Show Map", sender: self)
             }

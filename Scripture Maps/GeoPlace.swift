@@ -40,30 +40,54 @@ class GeoPlace {
     var viewHeading: Double?
     var category: GeoCategory!
 
-    class func fromTagRow(geoRecord: Row) -> GeoPlace {
-        var geoplace = GeoPlace()
-
-        geoplace.id = geoRecord.get(gGeoTagGeoPlaceId)!
-        geoplace.placename = geoRecord.get(gGeoPlacePlacename)!
-        geoplace.latitude = geoRecord.get(gGeoPlaceLatitude)!
-        geoplace.longitude = geoRecord.get(gGeoPlaceLongitude)!
-        geoplace.category = GeoCategory(rawValue: geoRecord.get(gGeoPlaceCategory)!)
-
-        if let flag = geoRecord.get(gGeoPlaceFlag) {
-            geoplace.flag = GeoFlag(rawValue: flag)
+    init(fromRow: Row) {
+        id = fromRow.get(gGeoTagGeoPlaceId)
+        placename = fromRow.get(gGeoPlacePlacename)
+        latitude = fromRow.get(gGeoPlaceLatitude)
+        longitude = fromRow.get(gGeoPlaceLongitude)
+        category = GeoCategory(rawValue: fromRow.get(gGeoPlaceCategory)!)
+        
+        if let geoFlag = fromRow.get(gGeoPlaceFlag) {
+            flag = GeoFlag(rawValue: geoFlag)!
         } else {
-            geoplace.flag = GeoFlag.None
+            flag = GeoFlag.None
         }
-
-        if let viewLatitude = geoRecord.get(gGeoPlaceViewLatitude) {
-            geoplace.viewLatitude = viewLatitude
-            geoplace.viewLongitude = geoRecord.get(gGeoPlaceViewLongitude)
-            geoplace.viewTilt = geoRecord.get(gGeoPlaceViewTilt)
-            geoplace.viewRoll = geoRecord.get(gGeoPlaceViewRoll)
-            geoplace.viewAltitude = geoRecord.get(gGeoPlaceViewAltitude)
-            geoplace.viewHeading = geoRecord.get(gGeoPlaceViewHeading)
+        
+        if let vLatitude = fromRow.get(gGeoPlaceViewLatitude) {
+            viewLatitude = vLatitude
+            viewLongitude = fromRow.get(gGeoPlaceViewLongitude)
+            viewTilt = fromRow.get(gGeoPlaceViewTilt)
+            viewRoll = fromRow.get(gGeoPlaceViewRoll)
+            viewAltitude = fromRow.get(gGeoPlaceViewAltitude)
+            viewHeading = fromRow.get(gGeoPlaceViewHeading)
         }
-
-        return geoplace
     }
+    
+    
+//    class func fromTagRow(geoRecord: Row) -> GeoPlace {
+//        var geoplace = GeoPlace()
+//
+//        geoplace.id = geoRecord.get(gGeoTagGeoPlaceId)!
+//        geoplace.placename = geoRecord.get(gGeoPlacePlacename)!
+//        geoplace.latitude = geoRecord.get(gGeoPlaceLatitude)!
+//        geoplace.longitude = geoRecord.get(gGeoPlaceLongitude)!
+//        geoplace.category = GeoCategory(rawValue: geoRecord.get(gGeoPlaceCategory)!)
+//
+//        if let flag = geoRecord.get(gGeoPlaceFlag) {
+//            geoplace.flag = GeoFlag(rawValue: flag)
+//        } else {
+//            geoplace.flag = GeoFlag.None
+//        }
+//
+//        if let viewLatitude = geoRecord.get(gGeoPlaceViewLatitude) {
+//            geoplace.viewLatitude = viewLatitude
+//            geoplace.viewLongitude = geoRecord.get(gGeoPlaceViewLongitude)
+//            geoplace.viewTilt = geoRecord.get(gGeoPlaceViewTilt)
+//            geoplace.viewRoll = geoRecord.get(gGeoPlaceViewRoll)
+//            geoplace.viewAltitude = geoRecord.get(gGeoPlaceViewAltitude)
+//            geoplace.viewHeading = geoRecord.get(gGeoPlaceViewHeading)
+//        }
+//
+//        return geoplace
+//    }
 }

@@ -132,8 +132,16 @@ class GeoDatabase {
     // Return an array of strings listing the titles of all scripture volumes.
     //
     func volumes() -> [String] {
-        // NEEDSWORK: write database query code to read this from the database
+        
+        var volumes = [String]()
+        
+        for book in db["book"].filter(gBookParentBookId == nil) {
+            volumes.append(book.get(gBookFullName)!)
+        }
+        
+        
 
-        return ["Old Testament", "New Testament", "Book of Mormon", "Doctrine and Covenants", "Pearl of Great Price"]
+//        return ["Old Testament", "New Testament", "Book of Mormon", "Doctrine and Covenants", "Pearl of Great Price"]
+        return volumes
     }
 }

@@ -133,9 +133,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b4M-Vl-gak" id="WAj-f8-9Pj">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="f9d-UH-0Li" kind="show" identifier="Show Chapters" id="aCr-XL-tKY"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -145,6 +142,7 @@
                     </tableView>
                     <connections>
                         <segue destination="VFa-Df-JcR" kind="show" identifier="Show Scripture" id="tua-kF-9uG"/>
+                        <segue destination="f9d-UH-0Li" kind="show" identifier="Show Chapters" id="XWX-6S-wUU"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z1X-u3-zdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -215,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NUD-Bk-tBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1618" y="120"/>
+            <point key="canvasLocation" x="1768" y="140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
@@ -234,7 +232,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="tua-kF-9uG"/>
         <segue reference="eTE-er-chp"/>
-        <segue reference="IfO-MZ-8si"/>
     </inferredMetricsTieBreakers>
 </document>
